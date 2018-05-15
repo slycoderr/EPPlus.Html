@@ -24,7 +24,7 @@ namespace EPPlus.Html.Converters
             {
                 //var excelColumn = excelRange.Worksheet.Column(excelRange.Start.Column);
 
-                //the tables ignore this width anyways
+                //the tables ignore these width anyways
                 //css["max-width"] = excelColumn.Width + "em";
                 //css["width"] = excelColumn.Width + "em";
                 css["overflow"] = excelRange.Worksheet.Cells[excelRange.End.Row, excelRange.End.Column + 1].Value != null ? "hidden" : null;
