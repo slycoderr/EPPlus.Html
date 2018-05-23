@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.3.0</Version>
-    <Authors>Till Wolff</Authors>
+    <Version>1.0.4.0</Version>
+    <Authors>Till Wolff, Aaron Kerti</Authors>
     <Company />
-    <Description>[Preview] Hi, I'm here to extend EPPlus with a html export ;)</Description>
+    <Description>A fork of the EPPlus.Html package on nuget. I've customized it for CTC.</Description>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/fitogram/EPPlus.Html</PackageProjectUrl>
     <PackageTags>EPPlus.Html EPPlus html export convert xlsx to html</PackageTags>
-    <Copyright>Copyright © Till Wolff 2018</Copyright>
-    <AssemblyVersion>0.3.0.0</AssemblyVersion>
-    <FileVersion>0.3.0.0</FileVersion>
+    <Copyright></Copyright>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
+    <FileVersion>1.0.4.0</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>

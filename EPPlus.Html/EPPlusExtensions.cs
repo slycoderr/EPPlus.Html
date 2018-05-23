@@ -46,6 +46,11 @@ namespace EPPlus.Html
                     ExcelRange excelCell = sheet.Cells[row, col];
                     HtmlElement htmlCell = null;
 
+                    if (sheet.Column(col).Width == 0)
+                    {
+                        continue;
+                    }
+
                     if (!cache.Any(c => c.row == row && c.col == col))
                     { 
                         htmlCell = htmlRow.AddChild("td");
