@@ -46,7 +46,7 @@ namespace EPPlus.Html
                     ExcelRange excelCell = sheet.Cells[row, col];
                     HtmlElement htmlCell = null;
 
-                    if (sheet.Column(col).Width == 0)
+                    if (sheet.Column(col).Width == 0 || sheet.Column(col).Hidden)
                     {
                         continue;
                     }

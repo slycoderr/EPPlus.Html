@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.0.4.0</Version>
+    <Version>1.0.5.0</Version>
     <Authors>Till Wolff, Aaron Kerti</Authors>
     <Company />
     <Description>A fork of the EPPlus.Html package on nuget. I've customized it for CTC.</Description>

@@ -9,16 +9,14 @@ namespace EPPlus.Html.Test
     [TestClass]
     public class HtmlTests
     {
-        private readonly string CurrentLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-
         [TestMethod]
         public void ExcelToHtml()
         {
-            FileInfo test001 = new FileInfo(@"\\WIN-SERVER\Public\DB-FlashReports-Test\FlashActivities\Projects\2019 DT ABS FSA 68292406AG\DailyLogs\2019 DT ABS FSA 68292406AG As Of 05-22-2018 3.37 PM (9).xlsx");
+            FileInfo test001 = new FileInfo(@"C:\Users\adkerti\Downloads\2019 HDCC ECM Cummins V1a Round 2 as of 03-06-2019 2.46.30 PM.xlsx");
             var package = new ExcelPackage(test001);
             var worksheet = package.Workbook.Worksheets[1];
 
-            var html = worksheet.ToHtml();
+            var html = worksheet.ToHtml(new ExcelAddress(2, 1, worksheet.Dimension.End.Row, worksheet.Dimension.End.Column));
 
             Show(html);
         }
